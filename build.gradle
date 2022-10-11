@@ -2,28 +2,26 @@ plugins {
     id 'sample'
 }
 
-// This works
 sample {
-    someExampleValue = "Some Example"
+    someExampleValue = "Some Example" // This works
 
     innerWithClosure {
-        someInnerValue = "Some Inner Value"
+        someInnerValue = "Some Inner Value" // This works
 
         exampleFunctionWithClosure {
-            someValue = "Example 1"
+            someValue = "Example 1" // This works
         }
     }
 }
 
-// This doesn't
 sample {
-    someExampleValue = "Some Example"
+    someExampleValue = "Some Example" // This works
 
     inner {
-        someInnerValue = "Some Inner Value"
+        someInnerValue = "Some Inner Value" // This works
 
         exampleFunction {
-            someValue = "Example 1"
+            someValue = "Example 1" // This doesn't work
         }
     }
 }
