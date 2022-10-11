@@ -1,0 +1,29 @@
+plugins {
+    id 'sample'
+}
+
+// This works
+sample {
+    someExampleValue = "Some Example"
+
+    innerWithClosure {
+        someInnerValue = "Some Inner Value"
+
+        exampleFunctionWithClosure {
+            someValue = "Example 1"
+        }
+    }
+}
+
+// This doesn't
+sample {
+    someExampleValue = "Some Example"
+
+    inner {
+        someInnerValue = "Some Inner Value"
+
+        exampleFunction {
+            someValue = "Example 1"
+        }
+    }
+}
