@@ -5,18 +5,6 @@ plugins {
 sample {
     someExampleValue = "Some Example" // This works
 
-    innerWithClosure {
-        someInnerValue = "Some Inner Value" // This works
-
-        exampleFunctionWithClosure {
-            someValue = "Example 1" // This works
-        }
-    }
-}
-
-sample {
-    someExampleValue = "Some Example" // This works
-
     inner {
         someInnerValue = "Some Inner Value" // This works
 
