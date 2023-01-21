@@ -4,7 +4,9 @@ plugins {
 
 repositories {
     mavenCentral()
+    google()
 }
 
 dependencies {
+    implementation "com.android.tools.build:gradle:7.4.0-beta02"
 }
